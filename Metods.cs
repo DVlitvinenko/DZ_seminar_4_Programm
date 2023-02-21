@@ -196,7 +196,18 @@ public static int AupToB(int a, int b)
   }
   return result;
 }
+// сумма цифр в числе
 
+public static int SummInNumber (int number)
+{
+  int summ = 0;
+  while (number > 0)
+{
+  summ = summ + (number % 10);
+  number = number / 10;
+}
+  return summ;
+}
 }
 
 
